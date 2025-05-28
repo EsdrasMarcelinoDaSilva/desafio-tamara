@@ -5,12 +5,13 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.cabecalho{
+
+ .cabecalho{
     display: flex;
+    justify-content: space-evenly;
     gap: 4rem;
 }
-
-/*isso aqui não vai servir para os card*/
+/*
 table{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,4 +44,26 @@ tbody tr:hover{
 div{
     width: 90%;
     margin: 0 auto;
+}
+*/
+
+#image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 4fr)); 
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#image-container div {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
